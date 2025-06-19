@@ -11,9 +11,10 @@ print("\nData dengan kolom Total Harga:")
 print(data.head())
 
 #3.
-data_elektronik = data[data['kategori'] == 'Elektronik']
-data_elektronik.to_exel9('elektronik.xlsx', index=False)
+data_elektronik = data[data['Kategori'] == 'Elektronik']
+data_elektronik.to_excel('elektronik.xlsx', index=False)
 print("\nData elektronik disimpan di elektronik.xlsx")
+
 
 #4
 rekap = data.groupby('Kategori')['Total Harga'].sum().reset_index()
