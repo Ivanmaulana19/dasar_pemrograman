@@ -8,3 +8,4 @@ def hitung_total(harga, presentase_diskon, presentase_pajak):
     harga_setelah_diskon = hitung_diskon(harga, presentase_diskon)
     pajak = hitung_pajak(harga_setelah_diskon, presentase_pajak)
     return harga_setelah_diskon + pajak
+print()
